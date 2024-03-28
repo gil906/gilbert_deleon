@@ -157,134 +157,139 @@
 
 
 
-<!-- Resume Section
-   ================================================== -->
+   To add a space between the company logo and the company name, you can simply insert a non-breaking space (`&nbsp;`) after the `<img>` tag. Here's the updated code with the space added:
+
+   ```html
+   <!-- Resume Section
+      ================================================== -->
    <section id="resume">
-
-
-      <!-- Work
-      ----------------------------------------------- -->
-      <div class="row work">
    
-         <div class="three columns header-col">
-            <h1><span>Work</span></h1>
-         </div>
    
-         <div class="nine columns main-col">
+         <!-- Work
+         ----------------------------------------------- -->
+         <div class="row work">
+      
+            <div class="three columns header-col">
+               <h1><span>Work</span></h1>
+            </div>
+      
+            <div class="nine columns main-col">
+      
+               <div class="row item">
+      
+                  <div class="twelve columns justify-txt">
+      
+                     <h3><img src="images/microsoft_logo.jpg" alt="Microsoft Logo" class="company-logo" style="max-height: 50px;">&nbsp;Azure Networking Support Engineer, Microsoft</h3>
+                     <p class="info">Jun 2022 - Present</p>
+      
+                     <p>
+                        Azure is Microsoft's cloud computing platform offering services for building and managing applications and services in the cloud.
+                        <ul>
+                           <li>Managed Fortune 500 clients' <span class="bold-text">Azure</span> networking, diagnosing BGP and hybrid environment issues.</li>
+                           <li>Achieved 100% SLA success, resolving 40+ cases/month, ensuring high customer satisfaction.</li>
+                           <li>SME for Azure Load Balancer providing <span class="bold-text">Azure</span> <span class="bold-text">DNS</span>, VPN, and <span class="bold-text">Kubernetes</span> solutions.</li>
+                        </ul>
+                        <br>
+                        <br>
+                        <span class="bold-text">Tech Stack:</span> <span class="bold-text">AWS</span>, <span class="bold-text">Microsoft Azure</span>, <span class="bold-text">Terraform</span>, Networking Ansible, Kubernetes, Docker, Git.
+                     </p>
+      
+                  </div>
+      
+               </div> <!-- item end -->
+      
+               <div class="row item">
+      
+                  <div class="twelve columns justify-txt">
+      
+                     <h3><img src="images/valid_logo.jpg" alt="Valid Logo" class="company-logo" style="max-height: 50px;">&nbsp;Solutions Support Engineer, Valid</h3>
+                     <p class="info">Nov 2020 - Nov 2022</p>
+      
+                     <p>
+                        Valid provides eSim and authentication services for Telecom providers.
+                        <ul>
+                           <li>Configured Zabbix monitoring for on-premises and cloud servers, improving SLA time.</li>
+                           <li>Supported <span class="bold-text">AWS</span> architecture and VPN connections, managing eSIM authentication infrastructure.</li>
+                           <li>Implemented Python projects on <span class="bold-text">AWS</span>, projecting 300% eSIM adoption increase and $500,000 revenue.</li>
+                        </ul>
+                     </p>
+      
+                  </div>
+      
+               </div> <!-- item end -->
+      
+               <div class="row item">
+      
+                  <div class="twelve columns justify-txt">
+      
+                     <h3><img src="images/telefonica_logo.png" alt="Telefonica Logo" class="company-logo" style="max-height: 50px;">&nbsp;Network Administrator, Telefonica</h3>
+                     <p class="info">Nov 2019 - Nov 2020</p>
+      
+                     <p>
+                        Telefonica is one of the largest telephone operators and mobile network providers in the world. It provides Mobile, broadband, and subscription television, operating in Europe and the Americas.
+                        <ul>
+                           <li>Led $200M+ nationwide network project, migrating to <span class="bold-text">Azure</span> & <span class="bold-text">AWS</span>, optimizing BGP, SD-WAN, and MPLS.</li>
+                           <li>Managed Huawei, F5 load balancers, Checkpoint firewalls, improving network security.</li>
+                           <li>Integrated SD-WAN for 150+ education facilities.</li>
+                        </ul>
+                     </p>
+      
+                  </div>
+      
+               </div> <!-- item end -->
+      
+               <div class="row item">
+      
+                  <div class="twelve columns justify-txt">
+      
+                     <h3><img src="images/slb_logo.png" alt="Schlumberger Logo" class="company-logo" style="max-height: 50px;">&nbsp;Network Connectivity Engineer, Schlumberger</h3>
+                     <p class="info">Jan 2017 - Feb 2019</p>
+      
+                     <p>
+                        Schlumberger provides oilfield services and is both the world's largest offshore drilling company by revenue.
+                        <ul>
+                           <li>Designed BGP-based network for 300+ sites, reducing costs by $1M+/year, accelerating connectivity by 64,935%.</li>
+                           <li>Migrated applications to <span class="bold-text">Azure</span> & <span class="bold-text
    
-            <div class="row item">
-   
-               <div class="twelve columns justify-txt">
-   
-                  <h3><img src="images/microsoft_logo.jpg" alt="Microsoft Logo" class="company-logo" style="max-height: 50px;">Azure Networking Support Engineer, Microsoft</h3>
-                  <p class="info">Jun 2022 - Present</p>
-   
-                  <p>
-                     Azure is Microsoft's cloud computing platform offering services for building and managing applications and services in the cloud.
-                     <ul>
-                        <li>Managed Fortune 500 clients' <span class="bold-text">Azure</span> networking, diagnosing BGP and hybrid environment issues.</li>
-                        <li>Achieved 100% SLA success, resolving 40+ cases/month, ensuring high customer satisfaction.</li>
-                        <li>SME for Azure Load Balancer providing <span class="bold-text">Azure</span> <span class="bold-text">DNS</span>, VPN, and <span class="bold-text">Kubernetes</span> solutions.</li>
-                     </ul>
-                     <br>
-                     <br>
-                     <span class="bold-text">Tech Stack:</span> <span class="bold-text">AWS</span>, <span class="bold-text">Microsoft Azure</span>, <span class="bold-text">Terraform</span>, Networking Ansible, Kubernetes, Docker, Git.
-                  </p>
-   
-               </div>
-   
-            </div> <!-- item end -->
-   
-            <div class="row item">
-   
-               <div class="twelve columns justify-txt">
-   
-                  <h3><img src="images/valid_logo.jpg" alt="Valid Logo" class="company-logo" style="max-height: 50px;">Solutions Support Engineer, Valid</h3>
-                  <p class="info">Nov 2020 - Nov 2022</p>
-   
-                  <p>
-                     Valid provides eSim and authentication services for Telecom providers.
-                     <ul>
-                        <li>Configured Zabbix monitoring for on-premises and cloud servers, improving SLA time.</li>
-                        <li>Supported <span class="bold-text">AWS</span> architecture and VPN connections, managing eSIM authentication infrastructure.</li>
-                        <li>Implemented Python projects on <span class="bold-text">AWS</span>, projecting 300% eSIM adoption increase and $500,000 revenue.</li>
-                     </ul>
-                  </p>
-   
-               </div>
-   
-            </div> <!-- item end -->
-   
-            <div class="row item">
-   
-               <div class="twelve columns justify-txt">
-   
-                  <h3><img src="images/telefonica_logo.png" alt="Telefonica Logo" class="company-logo" style="max-height: 50px;">Network Administrator, Telefonica</h3>
-                  <p class="info">Nov 2019 - Nov 2020</p>
-   
-                  <p>
-                     Telefonica is one of the largest telephone operators and mobile network providers in the world. It provides Mobile, broadband, and subscription television, operating in Europe and the Americas.
-                     <ul>
-                        <li>Led $200M+ nationwide network project, migrating to <span class="bold-text">Azure</span> & <span class="bold-text">AWS</span>, optimizing BGP, SD-WAN, and MPLS.</li>
-                        <li>Managed Huawei, F5 load balancers, Checkpoint firewalls, improving network security.</li>
-                        <li>Integrated SD-WAN for 150+ education facilities.</li>
-                     </ul>
-                  </p>
-   
-               </div>
-   
-            </div> <!-- item end -->
-   
-            <div class="row item">
-   
-               <div class="twelve columns justify-txt">
-   
-                  <h3><img src="images/slb_logo.png" alt="Schlumberger Logo" class="company-logo" style="max-height: 50px;">Network Connectivity Engineer, Schlumberger</h3>
-                  <p class="info">Jan 2017 - Feb 2019</p>
-   
-                  <p>
-                     Schlumberger provides oilfield services and is both the world's largest offshore drilling company by revenue.
-                     <ul>
-                        <li>Designed BGP-based network for 300+ sites, reducing costs by $1M+/year, accelerating connectivity by 64,935%.</li>
-                        <li>Migrated applications to <span class="bold-text">Azure</span> & <span class="bold-text">GCP</span> using Python and Terraform, ensuring reliable cloud services.</li>
-                     </ul>
-                  </p>
-   
-               </div>
-   
-            </div> <!-- item end -->
-   
-         </div> <!-- main-col end -->
-   
-      </div> <!-- End Work -->
-   
-      <!-- Education
-      ----------------------------------------------- -->
-      <div class="row education">
-   
-         <div class="three columns header-col">
-            <h1><span>Education</span></h1>
-         </div>
-   
-         <div class="nine columns main-col">
-   
-            <div class="row item">
-   
-               <div class="twelve columns justify-txt">
-   
-                  <h3>Bachelor of Science (B.S.) - Electronics and Telecommunication Engineering</h3>
-                  <p class="info">Sep 2009 - Sep 2015</p>
-   
-                  <p>
-                     Modules: Software Design & Development, Object Oriented Programming, Concurrent Programming, Linear Programming, Information Retrieval, Data Mining, Operating Systems, Distributed Systems, Compilers, Data Structures, Databases, Graphics, Networks.
-                     <br>
-                     Dissertation: “Application Development of a Money Manager in Android Studio.” An android application to manage income and expenses through a virtual wallet.
-                     <br>
-                     Tech Stack: Android SDK, PHP, C, Java, Python, OpenGl, HTML, CSS, PostegreSQL, MySQL, Joomla, Git, SCRUM.
-                  </p>
-   
-               </div
-   
+   ">GCP</span> using Python and Terraform, ensuring reliable cloud services.</li>
+                        </ul>
+                     </p>
+      
+                  </div>
+      
+               </div> <!-- item end -->
+      
+            </div> <!-- main-col end -->
+      
+         </div> <!-- End Work -->
+      
+         <!-- Education
+         ----------------------------------------------- -->
+         <div class="row education">
+      
+            <div class="three columns header-col">
+               <h1><span>Education</span></h1>
+            </div>
+      
+            <div class="nine columns main-col">
+      
+               <div class="row item">
+      
+                  <div class="twelve columns justify-txt">
+      
+                     <h3>Bachelor of Science (B.S.) - Electronics and Telecommunication Engineering</h3>
+                     <p class="info">Sep 2009 - Sep 2015</p>
+      
+                     <p>
+                        Modules: Software Design & Development, Object Oriented Programming, Concurrent Programming, Linear Programming, Information Retrieval, Data Mining, Operating Systems, Distributed Systems, Compilers, Data Structures, Databases, Graphics, Networks.
+                        <br>
+                        Dissertation: “Application Development of a Money Manager in Android Studio.” An android application to manage income and expenses through a virtual wallet.
+                        <br>
+                        Tech Stack: Android SDK, PHP, C, Java, Python, OpenGl, HTML, CSS, PostegreSQL, MySQL, Joomla, Git, SCRUM.
+                     </p>
+      
+                  </div
+   ```
 
 
 
