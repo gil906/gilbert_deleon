@@ -33,6 +33,27 @@
 	================================================== -->
    <link rel="shortcut icon" href="favicon.png">
 
+   <style>
+      ul {
+         list-style-type: disc; /* Ensures bullet points are visible */
+         margin-left: 20px; /* Adds some space to the left of the bullet points */
+      }
+
+      li {
+         margin-bottom: 5px; /* Adds space between list items */
+         line-height: 1.5; /* Adjusts line height for better readability */
+      }
+
+      #resume ul {
+         margin-left: 40px; /* Adds space to the left of the bullet points in the resume section */
+      }
+
+      #resume li {
+         margin-bottom: 5px; /* Reduces space between list items in the resume section */
+         line-height: 1.2; /* Adjusts line height for better readability in the resume section */
+      }
+   </style>
+
 </head>
 
 <body>
@@ -51,8 +72,6 @@
             <li><a class="smoothscroll" href="#about">About</a></li>
             <li><a class="smoothscroll" href="#resume">Background</a></li>
             <li><a class="smoothscroll" href="#portfolio">Professional Development</a></li>
-            <!-- <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li> -->
-            <!-- <li><a class="smoothscroll" href="#contact">Contact</a></li> -->
          </ul> <!-- end #nav -->
 
       </nav> <!-- end #nav-wrap -->
@@ -112,31 +131,17 @@
 
                   <h2>Contact Details</h2>
                   <p class="address">
-                     <!-- <span>Gilbert De Leon</span><br>
-                     <span>December 5, 1991</span><br>
-                     <span>Greek</span><br>
-                     <span>Consultant Cloud Engineer</span>
-                     <span>GilbertDe Leon.github.io/GilbertDe Leon</span>
-                     <span>mlGilbert@gmail.com</span>
-                     <span>Thessaloniki, Greece</span> -->
-
                      <strong>Fullname:</strong>
                      <span>Gilbert De Leon</span><br>
 
                      <strong>Location:</strong>
                      <span>Seattle, USA</span><br>
 
-  <!--
-                     <strong>Nationality:</strong>
-                     <span>Colombia</span><br>
-  -->
                      <strong>Languages:</strong>
                      <span>English, Spanish</span><br>
 
                      <strong>Email:</strong>
                      <span>gdleonq@gmail.com</span><br>
-
-
                   </p>
                </div>
 
@@ -153,9 +158,6 @@
       </div>
 
    </section> <!-- About Section End-->
-
-
-
 
 
 <!-- Resume Section
@@ -198,104 +200,36 @@
             </div> <!-- item end -->
             <div class="row item">
                <div class="twelve columns justify-txt">
-                  <h3><img src="images/telefonica_logo.png" alt="Telefonica Logo" class="company-logo" style="width: 50px;">&nbsp;Network Administrator, Telefonica</h3>
-                  <p class="info">Nov 2019 - Nov 2020</p>
-                  <p>Telefonica is one of the largest telephone operators and mobile network providers in the world. It provides Mobile, broadband, and subscription television, operating in Europe and the Americas.</p>
+                  <h3><img src="images/telconet_logo.png" alt="Telconet Logo" class="company-logo" style="width: 80px;">&nbsp;Networking Consultant, Telconet</h3>
+                  <p class="info">Feb 2020 - Dec 2020</p>
+                  <p>Telconet provides information and communication technology services in Latin America and America.</p>
                   <ul>
-                     <li>Led $200M+ nationwide network project, migrating to <span class="bold-text">Azure</span> & <span class="bold-text">AWS</span>, optimizing BGP, SD-WAN, and MPLS.</li>
-                     <li>Managed Huawei, F5 load balancers, Checkpoint firewalls, improving network security.</li>
-                     <li>Integrated SD-WAN for 150+ education facilities.</li>
+                     <li>Managed large-scale networks, ensuring optimal network performance and uptime.</li>
+                     <li>Configured and maintained network hardware and software, including routers, switches, and firewalls.</li>
+                     <li>Collaborated with cross-functional teams to implement network solutions and resolve complex technical issues.</li>
                   </ul>
                </div>
             </div> <!-- item end -->
             <div class="row item">
                <div class="twelve columns justify-txt">
-                  <h3><img src="images/slb_logo.png" alt="Schlumberger Logo" class="company-logo" style="width: 50px;">&nbsp;Network Connectivity Engineer, Schlumberger</h3>
-                  <p class="info">Jan 2017 - Feb 2019</p>
-                  <p>Schlumberger provides oilfield services and is both the world's largest offshore drilling company by revenue.</p>
+                  <h3><img src="images/telconet_logo.png" alt="Telconet Logo" class="company-logo" style="width: 80px;">&nbsp;Network Engineer, Telconet</h3>
+                  <p class="info">Oct 2014 - Nov 2019</p>
+                  <p>Telconet offers information and communication technology services in Ecuador, with its own fiber optic network infrastructure and 10 data centers, providing managed services, internet, and data center solutions to companies across Latin America.</p>
                   <ul>
-                     <li>Designed BGP-based network for 300+ sites, reducing costs by $1M+/year, accelerating connectivity by 64,935%.</li>
-                     <li>Migrated applications to <span class="bold-text">Azure</span> & <span class="bold-text">GCP</span> using Python and Terraform, ensuring reliable cloud services.</li>
+                     <li>Managed and optimized large-scale networks, ensuring network performance and reliability.</li>
+                     <li>Designed and implemented network solutions, including LAN, WAN, and wireless networks.</li>
+                     <li>Troubleshot and resolved complex network issues, ensuring minimal downtime and service disruption.</li>
                   </ul>
                </div>
             </div> <!-- item end -->
          </div> <!-- main-col end -->
       </div> <!-- End Work -->
-      <!-- Education
-      ----------------------------------------------- -->
-      <div class="row education">
-         <div class="three columns header-col">
-            <h1><span>Education</span></h1>
-         </div>
-         <div class="nine columns main-col">
-            <div class="row item">
-               <div class="twelve columns justify-txt">
-                  <h3>Bachelor of Science (B.S.) - Electronics and Telecommunication Engineering</h3>
-                  <p class="info">Sep 2009 - Sep 2015</p>
-                  <!-- 
-                  <p>
-                     Modules: Software Design & Development, Object Oriented Programming, Concurrent Programming, Linear Programming, Information Retrieval, Data Mining, Operating Systems, Distributed Systems, Compilers, Data Structures, Databases, Graphics, Networks.
-                     <br>
-                     Dissertation: “Application Development of a Money Manager in Android Studio.” An android application to manage income and expenses through a virtual wallet.
-                     <br>
-                     Tech Stack: Android SDK, PHP, C, Java, Python, OpenGl, HTML, CSS, PostegreSQL, MySQL, Joomla, Git, SCRUM.
-                  </p>
-                  -->
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- Skills
-      ----------------------------------------------- -->
-      <div class="row skill">
-         <div class="three columns header-col">
-            <h1><span>Skills</span></h1>
-         </div>
-         <div class="nine columns main-col">
-            <p class="justify-txt">Gilbert has a vast variety of skills, significant certifications and he is well trained too.</p>
-            <p class="bold-text" style="letter-spacing: 1px; text-transform: uppercase;">Soft Skills</p>
-            <div class="bars">
-               <ul class="skills">
-                  <li><span class="bar-expand leadership"></span><em>Leadership</em></li>
-                  <li><span class="bar-expand creativity"></span><em>Creativity</em></li>
-                  <li><span class="bar-expand critical-thinking"></span><em>Critical Thinking</em></li>
-                  <li><span class="bar-expand problem-solving"></span><em>Problem Solving</em></li>
-                  <li><span class="bar-expand teamwork"></span><em>Teamwork</em></li>
-               </ul>
-            </div><!-- end skill-bars -->
-            <div class="Technical skill">
-               <p class="bold-text" style="letter-spacing: 1px; text-transform: uppercase;">Technical Skills</p>
-               <div class="chip" style="cursor: pointer;">Azure</div>
-               <div class="chip" style="cursor: pointer;">Networking</div>
-               <div class="chip" style="cursor: pointer;">Kubernetes</div>
-               <div class="chip" style="cursor: pointer;">Linux</div>
-               <div class="chip" style="cursor: pointer;">Terraform</div>
-               <div class="chip" style="cursor: pointer;">Docker</div>
-               <div class="chip" style="cursor: pointer;">Python</div>
-               <div class="chip" style="cursor: pointer;">Cisco</div>
-               <div class="chip" style="cursor: pointer;">Cloud</div>
-               <div class="chip" style="cursor: pointer;">VPN</div>
-               <div class="chip" style="cursor: pointer;">Windows</div>
-               <div class="chip" style="cursor: pointer;">DevOps</div>
-               <div class="chip" style="cursor: pointer;">CI/CD</div>
-               <div class="chip" style="cursor: pointer;">DNS</div>
-               <div class="chip" style="cursor: pointer;">Postgres</div>
-               <div class="chip" style="cursor: pointer;">AWS</div>
-               <div class="chip" style="cursor: pointer;">GCP</div>
-               <div class="chip" style="cursor: pointer;">Azure</div>
-               <div class="chip" style="cursor: pointer;">Docker</div>
-               <div class="chip" style="cursor: pointer;">Kubernetes</div>
-               <div class="chip" style="cursor: pointer;">Jenkins</div>
-               <div class="chip" style="cursor: pointer;">Git</div>
-               <div class="chip" style="cursor: pointer;">Ansible</div>
-            </div> <!-- main-col end -->
-         </div> <!-- End skills -->
-      </div>
    </section> <!-- Resume Section End-->
+   
    
 
 
-   <!-- Portfolio Section
+<!-- Portfolio Section
    ================================================== -->
    <section id="portfolio">
 
@@ -303,167 +237,64 @@
 
          <div class="twelve columns collapsed">
 
-            <p class="bold-text"
-               style="text-align: center; letter-spacing: 1px; text-transform: uppercase; color: #313131; font: 25px/30px 'opensans-bold', sans-serif;">
-               Check Out
-               Some of My Achievements</p>
-
-            <!-- <h1 style="font-weight: bold !important">Check Out Some of My Achievements</h1> -->
-
-            <p class="justify-txt">
-               I am a skilled professional with a passion for technology and a proven track record in <span class="bold-text">Networking</span> and <span class="bold-text">Cloud</span> with over 9+ years of
-               experience between Cloud engineering, Networking, and <span class="bold-text">Python</span>. Proficient in both <span class="bold-text">Azure</span> and <span class="bold-text">AWS</span>, with expertise in <span class="bold-text">Docker</span> and
-               <span class="bold-text">Kubernetes</span> containerization. I am also skilled in SQL queries and excelling within <span class="bold-text">Linux</span> environments like <span class="bold-text">Ubuntu</span>.
-
-            </p>
+            <h1>Professional Development</h1>
 
             <!-- portfolio-wrapper -->
             <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
 
                <div class="columns portfolio-item">
                   <div class="item-wrap">
-                     <img alt="" src="images/portfolio/azure-administrator-associate.png">
-                     <div class="overlay">
-                        <div class="portfolio-item-meta">
-                           <h5>Microsoft Azure</h5>
-                           <p>Microsoft Azure Administrator (AZ-104)</p>
+                     <a href="#modal-01" title="">
+                        <img alt="" src="images/portfolio/aws-cert-1.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5>AWS Certified Cloud Practitioner</h5>
+                           </div>
                         </div>
-                     </div>
-                     <!-- <div class="link-icon"><i class="icon-plus"></i></div> -->
-                  </div>
-               </div> <!-- item end -->
-
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-                     <img alt="" src="images/portfolio/soa.png">
-                     <div class="overlay">
-                        <div class="portfolio-item-meta">
-                           <h5>Amazon Web Services</h5>
-                           <p>Certified Solutions Architect Associate</p>
-                        </div>
-                     </div>
-                     <!-- <div class="link-icon"><i class="icon-plus"></i></div> -->
-                  </div>
-               </div> <!-- item end -->
-
-          
-<!-- =================
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-                     <img alt="" src="images/portfolio/architect.png">
-                     <div class="overlay">
-                        <div class="portfolio-item-meta">
-                           <h5>Google Cloud</h5>
-                           <p>Certified Associate Cloud Engineer</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
--->
-<!-- =================
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-                     <img alt="" src="images/portfolio/engineer.png">
-                     <div class="overlay">
-                        <div class="portfolio-item-meta">
-                           <h5>Google Cloud</h5>
-                           <p>Certified Professional Cloud Architect</p>
-                        </div>
-                     </div>
-
-                  </div>
-               </div>
--->
-   <!-- 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-                     <img alt="" src="images/portfolio/azure900.png">
-                     <div class="overlay">
-                        <div class="portfolio-item-meta">
-                           <h5>Microsoft Azure</h5>
-                           <p>Certified Azure Fundamentals</p>
-                        </div>
-                     </div>
-
-                  </div>
-               </div> 
--->
-<!--
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-                     <img alt="" src="images/portfolio/terraform.png">
-                     <div class="overlay">
-                        <div class="portfolio-item-meta">
-                           <h5>Terraform</h5>
-                           <p>Certified Associate</p>
-                        </div>
-                     </div>
-
-                  </div>
-               </div> 
-            -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-                     <img alt="" src="images/portfolio/kubernetes.png">
-                     <div class="overlay">
-                        <div class="portfolio-item-meta">
-                           <h5>Kubernetes</h5>
-                           <p>Kubernetes Deep Dive - A Cloud Guru</p>
-                           <br>
-                           <p>Kubernetes for the Absolute Beginners - Hands-on - KodeKloud</p>
-                        </div>
-                     </div>
-                     <!-- <div class="link-icon"><i class="icon-plus"></i></div> -->
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
                   </div>
                </div> <!-- item end -->
 
                <div class="columns portfolio-item">
                   <div class="item-wrap">
-                     <img alt="" src="images/portfolio/docker.png">
-                     <div class="overlay">
-                        <div class="portfolio-item-meta">
-                           <h5>Docker</h5>
-                           <p>Docker for the Absolute Beginner - Hands On - DevOps - KodeKloud</p>
-                           <br>
-                           <p>Docker - SWARM - Hands-on - DevOps</p>
+                     <a href="#modal-02" title="">
+                        <img alt="" src="images/portfolio/aws-cert-2.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5>AWS Certified Solutions Architect Associate</h5>
+                           </div>
                         </div>
-                     </div>
-                     <!-- <div class="link-icon"><i class="icon-plus"></i></div> -->
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
                   </div>
                </div> <!-- item end -->
 
                <div class="columns portfolio-item">
                   <div class="item-wrap">
-                     <img alt="" src="images/portfolio/ansible.png">
-                     <div class="overlay">
-                        <div class="portfolio-item-meta">
-                           <h5>Ansible</h5>
-                           <p>Ansible Advanced - Hands-On - DevOps - KodeKloud</p>
-                           <br>
-                           <p>Ansible for the Absolute Beginner - Hands-On - DevOps - KodeKloud</p>
+                     <a href="#modal-03" title="">
+                        <img alt="" src="images/portfolio/aws-cert-3.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5>AWS Certified SysOps Administrator Associate</h5>
+                           </div>
                         </div>
-                     </div>
-                     <!-- <div class="link-icon"><i class="icon-plus"></i></div> -->
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
                   </div>
                </div> <!-- item end -->
 
                <div class="columns portfolio-item">
                   <div class="item-wrap">
-                     <img alt="" src="images/portfolio/jenkins.png">
-                     <div class="overlay">
-                        <div class="portfolio-item-meta">
-                           <h5>Jenkins</h5>
-                           <p>Jenkins, From Zero To Hero: Become a DevOps Jenkins Master</p>
+                     <a href="#modal-04" title="">
+                        <img alt="" src="images/portfolio/aws-cert-4.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5>AWS Certified DevOps Engineer Professional</h5>
+                           </div>
                         </div>
-                     </div>
-                     <!-- <div class="link-icon"><i class="icon-plus"></i></div> -->
-                  </div>
-               </div> <!-- item end -->
-
-
-                     <!-- <div class="link-icon"><i class="icon-plus"></i></div> -->
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
                   </div>
                </div> <!-- item end -->
 
@@ -471,91 +302,69 @@
 
          </div> <!-- twelve columns end -->
 
+
+         <!-- Modal Popup
+         --------------------------------------------------------------- -->
+
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+            <img class="scale-with-grid" src="images/portfolio/aws-cert-1.png" alt="" />
+
+            <div class="description-box">
+               <h4>AWS Certified Cloud Practitioner</h4>
+            </div>
+
+            <div class="link-box">
+               <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+         </div> <!-- modal-01 End -->
+
+         <div id="modal-02" class="popup-modal mfp-hide">
+
+            <img class="scale-with-grid" src="images/portfolio/aws-cert-2.png" alt="" />
+
+            <div class="description-box">
+               <h4>AWS Certified Solutions Architect Associate</h4>
+            </div>
+
+            <div class="link-box">
+               <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+         </div> <!-- modal-02 End -->
+
+         <div id="modal-03" class="popup-modal mfp-hide">
+
+            <img class="scale-with-grid" src="images/portfolio/aws-cert-3.png" alt="" />
+
+            <div class="description-box">
+               <h4>AWS Certified SysOps Administrator Associate</h4>
+            </div>
+
+            <div class="link-box">
+               <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+         </div> <!-- modal-03 End -->
+
+         <div id="modal-04" class="popup-modal mfp-hide">
+
+            <img class="scale-with-grid" src="images/portfolio/aws-cert-4.png" alt="" />
+
+            <div class="description-box">
+               <h4>AWS Certified DevOps Engineer Professional</h4>
+            </div>
+
+            <div class="link-box">
+               <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+         </div> <!-- modal-04 End -->
+
       </div> <!-- row End -->
 
    </section> <!-- Portfolio Section End-->
-
-
-   <!-- Call-To-Action Section
-   ================================================== -->
-   <!-- <section id="call-to-action">
-
-      <div class="row">
-
-         <div class="two columns header-col">
-
-            <h1><span>Get Hosting.</span></h1>
-
-         </div>
-
-         <div class="seven columns">
-
-            <h2><span class="lead">Unde Omnis Iste</span></h2>
-            <p><span class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                  laudantium, totam rem aperiam,
-                  eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae. </span></p>
-         </div>
-
-         <div class="three columns action">
-
-
-
-         </div>
-
-      </div>
-
-   </section> -->
-   <!-- Call-To-Action Section End-->
-
-
-   <!-- Testimonials Section
-   ================================================== -->
-   <section id="testimonials">
-
-      <div class="text-container">
-
-         <div class="row">
-
-            <div class="two columns header-col">
-
-               <h1><span>Client Testimonials</span></h1>
-
-            </div>
-
-            <div class="ten columns flex-container">
-
-               <div class="flexslider">
-
-                  <ul class="slides">
-
-                     <li>
-                        <blockquote>
-                           <p>Cloud is about how you do computing, not where you do computing.
-                           </p>
-                           <cite>Paul Maritz, CEO of VMware</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-
-                     <li>
-                        <blockquote>
-                           <p>Work hard, have fun, make history.
-                           </p>
-                           <cite>Jeff Bezon, CEO of Amazon</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-
-                  </ul>
-
-               </div> <!-- div.flexslider ends -->
-
-            </div> <!-- div.flex-container ends -->
-
-         </div> <!-- row ends -->
-
-      </div> <!-- text-container ends -->
-
-   </section> <!-- Testimonials Section End-->
-
 
    <!-- footer
    ================================================== -->
@@ -563,31 +372,33 @@
 
       <div class="row">
 
-         <!-- <div class="twelve columns">
+         <div class="twelve columns">
 
             <ul class="social-links">
-               <li><a href="https://www.linkedin.com/in/Gilbert-De Leon/"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/gilbert-deleon/"><i class="fa fa-linkedin"></i></a></li>
                <li><a href="https://www.instagram.com/gilbert_deleon"><i class="fa fa-instagram"></i></a></li>
                <li><a href="https://github.com/gil906"><i class="fa fa-github"></i></a></li>
-               <li><a href="mailto:gdleonq@gmail.com"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="mailto:gdleonq@gmail.com"><i class="fa fa-envelope"></i></a></li>
+               <li><a href="tel:754-232-2013"><i class="fa fa-phone"></i></a></li>
             </ul>
 
-         </div> -->
+            <ul class="copyright">
+               <li>&copy; Copyright 2023 Gilbert De Leon</li>
+               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>
+            </ul>
 
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a>
          </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
 
       </div>
 
-   </footer>
-   <!-- Footer End-->
+   </footer> <!-- Footer End -->
 
    <!-- Java Script
    ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script src="js/jquery-migrate-1.2.1.min.js"></script>
    <script src="js/jquery.flexslider.js"></script>
    <script src="js/waypoints.js"></script>
    <script src="js/jquery.fittext.js"></script>
