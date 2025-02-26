@@ -1,266 +1,129 @@
 <!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
 <html class="no-js" lang="en">
+<!--<![endif]-->
+
 <head>
+    <!--- Basic Page Needs
+   ================================================== -->
     <meta charset="utf-8">
     <title>Gilbert De Leon</title>
-    <meta name="description" content="Gilbert De Leon - Cloud Engineer, Network Engineer, Telecommunications Engineer">
-    <meta name="author" content="Gilbert De Leon">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+   ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/media-queries.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- Script
+   ================================================== -->
     <script src="js/modernizr.js"></script>
+
+    <!-- Favicons
+    ================================================== -->
     <link rel="shortcut icon" href="favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        :root {
-            --primary-color: #007bff;
-            --secondary-color: #00c6ff;
-            --text-color: #333;
-            --background-color: #f5f5f5;
-            --card-bg: #fff;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-            line-height: 1.8;
-            color: var(--text-color);
-            background-color: var(--background-color);
-            margin: 0;
-            padding: 0;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: 600;
-            color: #222;
-        }
-        a {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .row {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Navigation */
-        #nav-wrap {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 100;
-            background-color: var(--card-bg);
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            padding: 10px 0;
-        }
-        .nav {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            padding: 0;
-        }
-        .nav li {
-            margin: 0 15px;
-        }
-        .nav a {
-            font-size: 16px;
-            padding: 10px;
-            transition: color 0.3s;
-        }
-        .nav a:hover {
-            color: var(--secondary-color);
-        }
-
-        /* Banner */
-        .banner {
-            background: #f8f9fa; /* Light gray background, no blue box */
-            color: #333;
-            padding: 60px 20px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-top: 60px; /* Space for fixed nav */
-            position: relative; /* Keep it static, no movement */
-        }
-        .banner-text h1, .banner-text h3, .banner-text h5 {
-            color: #222;
-        }
-        .banner-text hr {
-            border-color: #007bff;
-            width: 50px;
-            margin: 20px auto;
-        }
-        .social {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-        .social i {
-            font-size: 1.5em;
-            color: #007bff;
-            transition: color 0.3s;
-        }
-        .social i:hover {
-            color: #0056b3;
-        }
-
-        /* Portfolio */
-        #portfolio-wrapper {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .portfolio-item img {
-            width: 100%;
-            max-width: 200px; /* Larger logos */
-            height: auto;
-            border-radius: 8px;
-            transition: transform 0.3s;
-        }
-        .portfolio-item:hover img {
-            transform: scale(1.05);
-        }
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.7);
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: opacity 0.3s;
-            border-radius: 8px;
-        }
-        .portfolio-item:hover .overlay {
-            opacity: 1;
-        }
-
-        /* Skills */
-        .bars ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .bars li {
-            flex: 1 1 200px;
-            margin-bottom: 15px;
-        }
-        .bar-expand {
-            height: 8px;
-            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-            border-radius: 4px;
-            width: 0;
-            transition: width 1s ease-in-out;
-        }
-        .technical-skills .chip {
-            display: inline-block;
-            padding: 8px 15px;
-            margin: 5px;
-            background-color: #e9ecef;
-            border-radius: 20px;
-            font-size: 14px;
-            transition: background-color 0.3s;
-        }
-        .technical-skills .chip:hover {
-            background-color: var(--primary-color);
-            color: #fff;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .nav {
-                flex-direction: column;
-                text-align: center;
-            }
-            .banner-text h1 {
-                font-size: 2em;
-            }
-            .portfolio-item img {
-                max-width: 150px; /* Slightly smaller on mobile */
-            }
-        }
-    </style>
 </head>
+
 <body>
-    <!-- Header -->
+    <!-- Header
+   ================================================== -->
     <header id="home">
         <nav id="nav-wrap">
+            <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+            <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
             <ul id="nav" class="nav">
                 <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
                 <li><a class="smoothscroll" href="#about">About</a></li>
                 <li><a class="smoothscroll" href="#resume">Background</a></li>
                 <li><a class="smoothscroll" href="#portfolio">Professional Development</a></li>
-            </ul>
-        </nav>
+                <!-- <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li> -->
+                <!-- <li><a class="smoothscroll" href="#contact">Contact</a></li> -->
+            </ul> <!-- end #nav -->
+        </nav> <!-- end #nav-wrap -->
 
         <div class="row banner">
             <div class="banner-text">
-                <i class="fas fa-code"></i>
-                <h5>Hello, World.</h5>
+                <i class="fa fa-code" style="color: #F06000;"></i>
+                <h5 style="color: #F06000;">Hello, World.</h5>
                 <h1 class="responsive-headline">I'm Gilbert De Leon.</h1>
-                <h3><span>Cloud Engineer</span> | <span>Network Engineer</span> | <span>Telecommunications Engineer</span></h3>
+                <h3><span>Cloud Engineer</span> |
+                    <span>Network Engineer</span> |
+                    <span>Telecommunications Engineer</span>
+                </h3>
                 <hr />
                 <ul class="social">
-                    <li><a href="https://www.linkedin.com/in/gilbert-deleon/"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/gil906"><i class="fab fa-github"></i></a></li>
-                    <li><a href="mailto:gdleonq@gmail.com"><i class="fas fa-envelope"></i></a></li>
-                    <li><a href="tel:754-232-2013"><i class="fas fa-phone"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/gilbert-deleon/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/gil906"><i class="fa fa-github"></i></a></li>
+                    <li><a href="mailto:gdleonq@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                    <li><a href="tel:754-232-2013"><i class="fa fa-phone"></i></a></li>
                 </ul>
             </div>
         </div>
 
         <p class="scrolldown">
-            <a class="smoothscroll" href="#about"><i class="fas fa-chevron-circle-down"></i></a>
+            <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
         </p>
-    </header>
+    </header> <!-- Header End -->
 
-    <!-- About Section -->
+    <!-- About Section
+   ================================================== -->
     <section id="about">
         <div class="row">
             <div class="three columns">
-                <img class="profile-pic" src="images/profilepic.jpg" alt="Gilbert De Leon" style="max-width: 200px; border-radius: 50%;">
+                <img class="profile-pic" src="images/profilepic.jpg" alt="" />
             </div>
+
             <div class="nine columns main-col">
                 <h2>About Me</h2>
-                <p>I’ve spent over 10 years working in <strong>cloud engineering</strong>, <strong>networking</strong>, and <strong>Python</strong>, with a focus on datacenter design and platforms like <strong>Azure</strong> and <strong>AWS</strong>. I’m experienced with Ethernet networking, <strong>Docker</strong>, <strong>Kubernetes</strong>, <strong>Terraform</strong>, and <strong>Ansible</strong>, and I’m really into AI tech. I’ve helped big clients like Hyperscalers sort out tough problems and improve performance, and I work well with engineering teams and leaders to make things happen.</p>
+                <p class="justify-txt">I’ve spent over 10 years working in <span class="bold-text">cloud engineering</span>, <span class="bold-text">networking</span>, and <span class="bold-text">Python</span>, with a focus on datacenter design and platforms like <span class="bold-text">Azure</span> and <span class="bold-text">AWS</span>. I’m experienced with Ethernet networking, <span class="bold-text">Docker</span>, <span class="bold-text">Kubernetes</span>, <span class="bold-text">Terraform</span>, and <span class="bold-text">Ansible</span>, and I’m really into AI tech. I’ve helped big clients like Hyperscalers sort out tough problems and improve performance, and I work well with engineering teams and leaders to make things happen.</p>
+
                 <div class="row">
                     <div class="columns contact-details">
                         <h2>Contact Details</h2>
                         <p class="address">
-                            <strong>Fullname:</strong> <span>Gilbert De Leon</span><br>
-                            <strong>Location:</strong> <span>Seattle, USA</span><br>
-                            <strong>Languages:</strong> <span>English, Spanish</span><br>
-                            <strong>Email:</strong> <span>gdleonq@gmail.com</span>
+                            <strong>Fullname:</strong>
+                            <span>Gilbert De Leon</span><br>
+                            <strong>Location:</strong>
+                            <span>Seattle, USA</span><br>
+                            <strong>Languages:</strong>
+                            <span>English, Spanish</span><br>
+                            <strong>Email:</strong>
+                            <span>gdleonq@gmail.com</span><br>
                         </p>
                     </div>
-                    <div class="columns download">
-                        <p><a href="https://raw.githubusercontent.com/gil906/gilbert_deleon/main/resume/Gilbert_De_Leon-Resume.pdf" class="button" download><i class="fas fa-download"></i> Download CV</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Resume Section -->
+                    <div class="columns download">
+                        <p>
+                            <a href="https://raw.githubusercontent.com/gil906/gilbert_deleon/main/resume/Gilbert_De_Leon-Resume.pdf" class="button" download><i class="fa fa-download"></i>Download CV</a>
+                        </p>
+                    </div>
+                </div> <!-- end row -->
+            </div> <!-- end .main-col -->
+        </div>
+    </section> <!-- About Section End-->
+
+    <!-- Resume Section
+   ================================================== -->
     <section id="resume">
+        <!-- Work
+      ----------------------------------------------- -->
         <div class="row work">
             <div class="three columns header-col">
                 <h1><span>Work</span></h1>
             </div>
             <div class="nine columns main-col">
                 <div class="row item">
-                    <div class="twelve columns">
-                        <h3><img src="images/microsoft_logo.png" alt="Microsoft Logo" style="width: 50px; vertical-align: middle; margin-right: 15px;"> Azure Networking Support Engineer, Microsoft</h3>
+                    <div class="twelve columns justify-txt">
+                        <h3><img src="images/microsoft_logo.png" alt="Microsoft Logo" class="company-logo" style="width: 80px;"> Azure Networking Support Engineer, Microsoft</h3>
                         <p class="info">Jun 2022 - Present</p>
                         <p>Delivered technical expertise to Fortune 500 companies, resolving networking challenges in Azure environments, including Azure Load Balancer, DNS, Traffic Manager, VPN, and Kubernetes solutions.</p>
                         <ul>
@@ -268,12 +131,13 @@
                             <li>Managed deployment pipelines for AKS (Azure Kubernetes Service) using Azure DevOps, optimizing scalability and performance of cloud-native applications.</li>
                             <li>Acted as SME for Azure Load Balancer, enhancing performance testing and system reliability for critical infrastructure.</li>
                         </ul>
-                        <p><strong>Tech Stack:</strong> Azure, Microsoft Azure, Cloud Networking, Networking, Ansible, Kubernetes, Docker, Git.</p>
+                        <span class="bold-text">Tech Stack:</span> <span class="bold-text">Azure</span>, <span class="bold-text">Microsoft Azure</span>, <span class="bold-text">Cloud Networking</span>, Networking, Ansible, Kubernetes, Docker, Git.
                     </div>
-                </div>
+                </div> <!-- item end -->
+                <br>
                 <div class="row item">
-                    <div class="twelve columns">
-                        <h3><img src="images/valid_logo.jpg" alt="Valid Logo" style="width: 50px; vertical-align: middle; margin-right: 15px;"> Solutions Support Engineer, Valid</h3>
+                    <div class="twelve columns justify-txt">
+                        <h3><img src="images/valid_logo.jpg" alt="Valid Logo" class="company-logo" style="width: 50px;"> Solutions Support Engineer, Valid</h3>
                         <p class="info">Nov 2020 - Jun 2022</p>
                         <p>Supported AWS architecture and VPN connections, managing eSIM authentication infrastructure for Telecom providers.</p>
                         <ul>
@@ -281,43 +145,47 @@
                             <li>Developed Python projects on AWS, driving a projected 300% eSIM adoption increase and $500,000/year in revenue.</li>
                             <li>Maintained telemetry systems with Zabbix, optimizing performance monitoring and system reliability.</li>
                         </ul>
-                        <p><strong>Tech Stack:</strong> AWS, Amazon Web Services, Linux, Networking, Ansible, Kubernetes, Docker, Git.</p>
+                        <span class="bold-text">Tech Stack:</span> <span class="bold-text">AWS</span>, <span class="bold-text">Amazon Web Services</span>, <span class="bold-text">Linux</span>, Networking, Ansible, Kubernetes, Docker, Git.
                     </div>
-                </div>
+                </div> <!-- item end -->
+                <br>
                 <div class="row item">
-                    <div class="twelve columns">
-                        <h3><img src="images/telefonica_logo.png" alt="Telefonica Logo" style="width: 50px; vertical-align: middle; margin-right: 15px;"> Network Administrator, Telefonica</h3>
+                    <div class="twelve columns justify-txt">
+                        <h3><img src="images/telefonica_logo.png" alt="Telefonica Logo" class="company-logo" style="width: 50px;"> Network Administrator, Telefonica</h3>
                         <p class="info">Nov 2019 - Nov 2020</p>
                         <p>Led a $200M+ nationwide schools network project, optimizing BGP and SD-WAN across 150+ facilities.</p>
                         <ul>
                             <li>Installed and managed datacenter routers, switches, F5 load balancers, and Checkpoint firewalls, integrating with SD-WAN for seamless dense datacenter design.</li>
                             <li>Migrated network infrastructure to new datacenters and cloud environments, enhancing scalability and performance.</li>
                         </ul>
-                        <p><strong>Tech Stack:</strong> Networking, BGP, SD-WAN, Routers, Switches, F5 Load Balancers, Checkpoint Firewalls, Ansible.</p>
+                        <span class="bold-text">Tech Stack:</span> Networking, BGP, SD-WAN, Routers, Switches, F5 Load Balancers, Checkpoint Firewalls, Ansible.
                     </div>
-                </div>
+                </div> <!-- item end -->
+                <br>
                 <div class="row item">
-                    <div class="twelve columns">
-                        <h3><img src="images/slb_logo.png" alt="Schlumberger Logo" style="width: 50px; vertical-align: middle; margin-right: 15px;"> Network Connectivity Engineer, Schlumberger</h3>
+                    <div class="twelve columns justify-txt">
+                        <h3><img src="images/slb_logo.png" alt="Schlumberger Logo" class="company-logo" style="width: 50px;"> Network Connectivity Engineer, Schlumberger</h3>
                         <p class="info">Jan 2017 - Feb 2019</p>
                         <p>Designed a BGP-based network for 300+ sites, reducing costs by $1M+/year and improving connectivity by 64,935%.</p>
                         <ul>
                             <li>Migrated applications to Azure and GCP using Python and Terraform, ensuring reliable cloud services.</li>
                             <li>Configured and supported 200+ Cisco routers and switches, optimizing on-premises network performance.</li>
                         </ul>
-                        <p><strong>Tech Stack:</strong> Azure, Google Cloud, Terraform, Networking, Ansible, Cisco, BGP, Switches, Routers.</p>
+                        <span class="bold-text">Tech Stack:</span> <span class="bold-text">Azure</span>, <span class="bold-text">Google Cloud</span>, <span class="bold-text">Terraform</span>, Networking, Ansible, Cisco, BGP, Switches, Routers.
                     </div>
-                </div>
-            </div>
-        </div>
+                </div> <!-- item end -->
+            </div> <!-- main-col end -->
+        </div> <!-- End Work -->
 
+        <!-- Education
+      ----------------------------------------------- -->
         <div class="row education">
             <div class="three columns header-col">
                 <h1><span>Education</span></h1>
             </div>
             <div class="nine columns main-col">
                 <div class="row item">
-                    <div class="twelve columns">
+                    <div class="twelve columns justify-txt">
                         <h3>Bachelor of Science (B.S.) - Electronics and Telecommunication Engineering</h3>
                         <p class="info">Sep 2009 - Sep 2015</p>
                     </div>
@@ -325,40 +193,71 @@
             </div>
         </div>
 
+        <!-- Skills
+      ----------------------------------------------- -->
         <div class="row skill">
             <div class="three columns header-col">
                 <h1><span>Skills</span></h1>
             </div>
             <div class="nine columns main-col">
-                <p>Gilbert has a vast variety of skills, significant certifications and he is well trained too.</p>
-                <p><strong>Soft Skills</strong></p>
+                <p class="justify-txt">Gilbert has a vast variety of skills, significant certifications and he is well trained too.</p>
+                <p class="bold-text" style="letter-spacing: 1px; text-transform: uppercase;">Soft Skills</p>
                 <div class="bars">
                     <ul class="skills">
-                        <li><span class="bar-expand leadership" style="width: 90%;"></span><em>Leadership</em></li>
-                        <li><span class="bar-expand creativity" style="width: 85%;"></span><em>Creativity</em></li>
-                        <li><span class="bar-expand critical-thinking" style="width: 95%;"></span><em>Critical Thinking</em></li>
-                        <li><span class="bar-expand problem-solving" style="width: 90%;"></span><em>Problem Solving</em></li>
-                        <li><span class="bar-expand teamwork" style="width: 88%;"></span><em>Teamwork</em></li>
+                        <li><span class="bar-expand leadership"></span><em>Leadership</em></li>
+                        <li><span class="bar-expand creativity"></span><em>Creativity</em></li>
+                        <li><span class="bar-expand critical-thinking"></span><em>Critical Thinking</em></li>
+                        <li><span class="bar-expand problem-solving"></span><em>Problem Solving</em></li>
+                        <li><span class="bar-expand teamwork"></span><em>Teamwork</em></li>
                     </ul>
-                </div>
-                <p><strong>Technical Skills</strong></p>
-                <div class="technical-skills">
-                    <span class="chip">Azure</span><span class="chip">Networking</span><span class="chip">Kubernetes</span><span class="chip">Linux</span><span class="chip">Terraform</span><span class="chip">Docker</span><span class="chip">Python</span><span class="chip">Cisco</span><span class="chip">Cloud</span><span class="chip">VPN</span><span class="chip">Windows</span><span class="chip">DevOps</span><span class="chip">CI/CD</span><span class="chip">DNS</span><span class="chip">Postgres</span><span class="chip">AWS</span><span class="chip">GCP</span><span class="chip">Jenkins</span><span class="chip">Git</span><span class="chip">Ansible</span>
-                </div>
-            </div>
+                </div><!-- end skill-bars -->
+                <div class="Technical skill">
+                    <p class="bold-text" style="letter-spacing: 1px; text-transform: uppercase;">Technical Skills</p>
+                    <div class="chip" style="cursor: pointer;">Azure</div>
+                    <div class="chip" style="cursor: pointer;">Networking</div>
+                    <div class="chip" style="cursor: pointer;">Kubernetes</div>
+                    <div class="chip" style="cursor: pointer;">Linux</div>
+                    <div class="chip" style="cursor: pointer;">Terraform</div>
+                    <div class="chip" style="cursor: pointer;">Docker</div>
+                    <div class="chip" style="cursor: pointer;">Python</div>
+                    <div class="chip" style="cursor: pointer;">Cisco</div>
+                    <div class="chip" style="cursor: pointer;">Cloud</div>
+                    <div class="chip" style="cursor: pointer;">VPN</div>
+                    <div class="chip" style="cursor: pointer;">Windows</div>
+                    <div class="chip" style="cursor: pointer;">DevOps</div>
+                    <div class="chip" style="cursor: pointer;">CI/CD</div>
+                    <div class="chip" style="cursor: pointer;">DNS</div>
+                    <div class="chip" style="cursor: pointer;">Postgres</div>
+                    <div class="chip" style="cursor: pointer;">AWS</div>
+                    <div class="chip" style="cursor: pointer;">GCP</div>
+                    <div class="chip" style="cursor: pointer;">Azure</div>
+                    <div class="chip" style="cursor: pointer;">Docker</div>
+                    <div class="chip" style="cursor: pointer;">Kubernetes</div>
+                    <div class="chip" style="cursor: pointer;">Jenkins</div>
+                    <div class="chip" style="cursor: pointer;">Git</div>
+                    <div class="chip" style="cursor: pointer;">Ansible</div>
+                </div> <!-- main-col end -->
+            </div> <!-- End skills -->
         </div>
-    </section>
+    </section> <!-- Resume Section End-->
 
-    <!-- Portfolio Section -->
+    <!-- Portfolio Section
+   ================================================== -->
     <section id="portfolio">
         <div class="row">
             <div class="twelve columns collapsed">
-                <p><strong>Check Out Some of My Achievements</strong></p>
-                <p>I’ve spent over 10 years working in <strong>cloud engineering</strong>, <strong>networking</strong>, and <strong>Python</strong>, with a focus on datacenter design and platforms like <strong>Azure</strong> and <strong>AWS</strong>. I’m experienced with Ethernet networking, <strong>Docker</strong>, <strong>Kubernetes</strong>, <strong>Terraform</strong>, and <strong>Ansible</strong>, and I’m really into AI tech. I’ve helped big clients like Hyperscalers sort out tough problems and improve performance, and I work well with engineering teams and leaders to make things happen.</p>
+                <p class="bold-text" style="text-align: center; letter-spacing: 1px; text-transform: uppercase; color: #313131; font: 25px/30px 'opensans-bold', sans-serif;">
+                    Check Out Some of My Achievements
+                </p>
+                <p class="justify-txt">
+                    I’ve spent over 10 years working in <span class="bold-text">cloud engineering</span>, <span class="bold-text">networking</span>, and <span class="bold-text">Python</span>, with a focus on datacenter design and platforms like <span class="bold-text">Azure</span> and <span class="bold-text">AWS</span>. I’m experienced with Ethernet networking, <span class="bold-text">Docker</span>, <span class="bold-text">Kubernetes</span>, <span class="bold-text">Terraform</span>, and <span class="bold-text">Ansible</span>, and I’m really into AI tech. I’ve helped big clients like Hyperscalers sort out tough problems and improve performance, and I work well with engineering teams and leaders to make things happen.
+                </p>
+
+                <!-- portfolio-wrapper -->
                 <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
                     <div class="columns portfolio-item">
                         <div class="item-wrap">
-                            <img alt="Azure Administrator Associate" src="images/portfolio/azure-administrator-associate.png">
+                            <img alt="" src="images/portfolio/azure-administrator-associate.png">
                             <div class="overlay">
                                 <div class="portfolio-item-meta">
                                     <h5>Microsoft Azure</h5>
@@ -366,10 +265,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> <!-- item end -->
+
                     <div class="columns portfolio-item">
                         <div class="item-wrap">
-                            <img alt="AWS Solutions Architect" src="images/portfolio/soa.png">
+                            <img alt="" src="images/portfolio/soa.png">
                             <div class="overlay">
                                 <div class="portfolio-item-meta">
                                     <h5>Amazon Web Services</h5>
@@ -377,85 +277,126 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> <!-- item end -->
+
                     <div class="columns portfolio-item">
                         <div class="item-wrap">
-                            <img alt="Kubernetes Certifications" src="images/portfolio/kubernetes.png">
+                            <img alt="" src="images/portfolio/kubernetes.png">
                             <div class="overlay">
                                 <div class="portfolio-item-meta">
                                     <h5>Kubernetes</h5>
                                     <p>Kubernetes Deep Dive - A Cloud Guru</p>
-                                    <p>Kubernetes for the Absolute Beginners - KodeKloud</p>
+                                    <br>
+                                    <p>Kubernetes for the Absolute Beginners - Hands-on - KodeKloud</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> <!-- item end -->
+
                     <div class="columns portfolio-item">
                         <div class="item-wrap">
-                            <img alt="Docker Certifications" src="images/portfolio/docker.png">
+                            <img alt="" src="images/portfolio/docker.png">
                             <div class="overlay">
                                 <div class="portfolio-item-meta">
                                     <h5>Docker</h5>
-                                    <p>Docker for the Absolute Beginner - KodeKloud</p>
+                                    <p>Docker for the Absolute Beginner - Hands On - DevOps - KodeKloud</p>
+                                    <br>
                                     <p>Docker - SWARM - Hands-on - DevOps</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> <!-- item end -->
+
                     <div class="columns portfolio-item">
                         <div class="item-wrap">
-                            <img alt="Ansible Certifications" src="images/portfolio/ansible.png">
+                            <img alt="" src="images/portfolio/ansible.png">
                             <div class="overlay">
                                 <div class="portfolio-item-meta">
                                     <h5>Ansible</h5>
-                                    <p>Ansible Advanced - KodeKloud</p>
-                                    <p>Ansible for the Absolute Beginner - KodeKloud</p>
+                                    <p>Ansible Advanced - Hands-On - DevOps - KodeKloud</p>
+                                    <br>
+                                    <p>Ansible for the Absolute Beginner - Hands-On - DevOps - KodeKloud</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> <!-- item end -->
+
                     <div class="columns portfolio-item">
                         <div class="item-wrap">
-                            <img alt="Jenkins Certification" src="images/portfolio/jenkins.png">
+                            <img alt="" src="images/portfolio/jenkins.png">
                             <div class="overlay">
                                 <div class="portfolio-item-meta">
                                     <h5>Jenkins</h5>
-                                    <p>Jenkins, From Zero To Hero</p>
+                                    <p>Jenkins, From Zero To Hero: Become a DevOps Jenkins Master</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> <!-- item end -->
+
                     <div class="columns portfolio-item">
                         <div class="item-wrap">
-                            <img alt="Azure DevOps" src="images/portfolio/azuredevops.png">
+                            <img alt="" src="images/portfolio/azuredevops.png">
                             <div class="overlay">
                                 <div class="portfolio-item-meta">
-                                    <h5>Azure DevOps</h5>
+                                    <h5>Azure Devops</h5>
                                     <p>Azure DevOps</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> <!-- item end -->
+                </div> <!-- portfolio-wrapper end -->
+            </div> <!-- twelve columns end -->
+        </div> <!-- row End -->
+    </section> <!-- Portfolio Section End-->
+
+    <!-- Testimonials Section
+   ================================================== -->
+    <section id="testimonials">
+        <div class="text-container">
+            <div class="row">
+                <div class="two columns header-col">
+                    <h1><span>Client Testimonials</span></h1>
                 </div>
-            </div>
-        </div>
-    </section>
+                <div class="ten columns flex-container">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <blockquote>
+                                    <p>Cloud is about how you do computing, not where you do computing.</p>
+                                    <cite>Paul Maritz, CEO of VMware</cite>
+                                </blockquote>
+                            </li> <!-- slide ends -->
+                            <li>
+                                <blockquote>
+                                    <p>Work hard, have fun, make history.</p>
+                                    <cite>Jeff Bezos, CEO of Amazon</cite>
+                                </blockquote>
+                            </li> <!-- slide ends -->
+                        </ul>
+                    </div> <!-- div.flexslider ends -->
+                </div> <!-- div.flex-container ends -->
+            </div> <!-- row ends -->
+        </div> <!-- text-container ends -->
+    </section> <!-- Testimonials Section End-->
 
-    <!-- Footer -->
-    <footer style="background-color: #333; color: #fff; text-align: center; padding: 20px 0;">
+    <!-- footer
+   ================================================== -->
+    <footer>
         <div class="row">
-            <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="fas fa-arrow-up"></i></a></div>
+            <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
         </div>
-    </footer>
+    </footer> <!-- Footer End-->
 
-    <!-- JavaScript -->
+    <!-- Java Script
+   ================================================== -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/jquery.flexslider.js"></script>
     <script src="js/waypoints.js"></script>
     <script src="js/jquery.fittext.js"></script>
     <script src="js/magnific-popup.js"></script>
     <script src="js/init.js"></script>
 </body>
+
 </html>
